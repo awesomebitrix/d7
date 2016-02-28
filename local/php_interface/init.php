@@ -37,8 +37,13 @@ $eventManager->addEventHandler(
     'onAfterDelete'
 );
 function onAfterDelete( \Bitrix\Main\Entity\Event $event ){
-    $primary = $event->getParameter('primary'); //ключ удаленного обьекта.  он передаеться во всех методах удаления D7
-    dump($primary['ID']);
+    $primary = $event->getParameter("primary"); //ключ удаленного обьекта.  он передаеться во всех методах удаления D7
+
+    echo "<pre>";
+    var_dump($primary['ID']);
+    echo "</pre>";
+
+    //dump($primary['ID']);
 }
 
 
