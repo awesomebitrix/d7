@@ -8,6 +8,7 @@
 namespace Academy\Orm13;
 
 use Bitrix\Main\Entity;
+require_once($_SERVER['DOCUMENT_ROOT'] . "/bitrix/modules/main/include/prolog_before.php");
 
 class OrmTable extends Entity\DataManager {
 
